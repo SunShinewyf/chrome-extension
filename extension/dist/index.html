@@ -1,18 +1,76 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
-    <meta name="format-detection" content="telephone=no"/>
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="white" />
-    <meta name="description" content="demo for chrome extensions">
-    <title>Chrome插件扩展程序DEMO</title>
-<body>
-    <header class="control-pannel">Popup</header>
-    <div id="content">
-      <span> Hello Popup!</span>
-    </div>
-    <footer class="control-pannel">Hello Footer</footer>
-</html>
-<script type="text/javascript" src="index.js?917002a19ad33c09b8b3"></script>
+Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module build failed: Error: ENOENT: no such file or directory, open '/Users/uc/Project/my-chrome-extension/node_modules/lodash/lodash.js':
+  Error: ENOENT: no such file or directory, open '/Users/uc/Project/my-chrome-extension/node_modules/lodash/lodash.js'
+  
+  - compiler.js:76 
+    [my-chrome-extension]/[html-webpack-plugin]/lib/compiler.js:76:16
+  
+  - Compiler.js:304 compile
+    [my-chrome-extension]/[webpack]/lib/Compiler.js:304:11
+  
+  - Compiler.js:514 applyPluginsAsync.err
+    [my-chrome-extension]/[webpack]/lib/Compiler.js:514:14
+  
+  - Tapable.js:202 next
+    [my-chrome-extension]/[tapable]/lib/Tapable.js:202:11
+  
+  - CachePlugin.js:78 Compiler.<anonymous>
+    [my-chrome-extension]/[webpack]/lib/CachePlugin.js:78:5
+  
+  - Tapable.js:206 Compiler.applyPluginsAsyncSeries
+    [my-chrome-extension]/[tapable]/lib/Tapable.js:206:13
+  
+  - Compiler.js:511 compilation.seal.err
+    [my-chrome-extension]/[webpack]/lib/Compiler.js:511:11
+  
+  - Tapable.js:195 Compilation.applyPluginsAsyncSeries
+    [my-chrome-extension]/[tapable]/lib/Tapable.js:195:46
+  
+  - Compilation.js:680 self.applyPluginsAsync.err
+    [my-chrome-extension]/[webpack]/lib/Compilation.js:680:19
+  
+  - Tapable.js:195 Compilation.applyPluginsAsyncSeries
+    [my-chrome-extension]/[tapable]/lib/Tapable.js:195:46
+  
+  - Compilation.js:671 self.applyPluginsAsync.err
+    [my-chrome-extension]/[webpack]/lib/Compilation.js:671:11
+  
+  - Tapable.js:195 Compilation.applyPluginsAsyncSeries
+    [my-chrome-extension]/[tapable]/lib/Tapable.js:195:46
+  
+  - Compilation.js:666 self.applyPluginsAsync.err
+    [my-chrome-extension]/[webpack]/lib/Compilation.js:666:10
+  
+  - Tapable.js:195 Compilation.applyPluginsAsyncSeries
+    [my-chrome-extension]/[tapable]/lib/Tapable.js:195:46
+  
+  - Compilation.js:662 sealPart2
+    [my-chrome-extension]/[webpack]/lib/Compilation.js:662:9
+  
+  - Tapable.js:195 Compilation.applyPluginsAsyncSeries
+    [my-chrome-extension]/[tapable]/lib/Tapable.js:195:46
+  
+  - Compilation.js:605 Compilation.seal
+    [my-chrome-extension]/[webpack]/lib/Compilation.js:605:8
+  
+  - Compiler.js:508 applyPluginsParallel.err
+    [my-chrome-extension]/[webpack]/lib/Compiler.js:508:17
+  
+  - Tapable.js:289 
+    [my-chrome-extension]/[tapable]/lib/Tapable.js:289:11
+  
+  - Compilation.js:507 _addModuleChain
+    [my-chrome-extension]/[webpack]/lib/Compilation.js:507:11
+  
+  - Compilation.js:477 processModuleDependencies.err
+    [my-chrome-extension]/[webpack]/lib/Compilation.js:477:14
+  
+  - next_tick.js:131 _combinedTickCallback
+    internal/process/next_tick.js:131:7
+  
+  - next_tick.js:180 process._tickCallback
+    internal/process/next_tick.js:180:9
+  
+</pre><script type="text/javascript" src="index.js?654244a923548e75c3ab"></script>
