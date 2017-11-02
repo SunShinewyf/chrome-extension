@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "chrome-extension-demo",
+  "description": "A hello world chrome extension.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon_24.png",
+    "default_title": "my_chrome_extension",
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}
