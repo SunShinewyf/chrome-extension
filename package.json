@@ -1,7 +1,7 @@
 {
-  "name": "my-chrome-extension",
+  "name": "Bookmarks",
   "version": "1.0.0",
-  "description": "a simple chrome-extension demo",
+  "description": "my bookmark manager",
   "main": "index.js",
   "scripts": {
     "dev": "webpack -w",
@@ -12,7 +12,8 @@
     "url": "https://github.com/SunShinewyf/chrome-extension.git"
   },
   "keywords": [
-    "chrome-extension"
+    "chrome-extension",
+    "bookmarks"
   ],
   "author": "SunShinewyf",
   "license": "ISC",

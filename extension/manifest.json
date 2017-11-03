@@ -1,12 +1,12 @@
 {
   "manifest_version": 2,
-  "name": "chrome-extension-demo",
-  "description": "A hello world chrome extension.",
+  "name": "__MSG_extName__",
+  "description": "__MSG_extDescription",
   "version": "1.0",
 
   "browser_action": {
     "default_icon": "icon.png",
-    "default_title": "my_chrome_extension",
+    "default_title": "__MSG_extTitle",
     "default_popup": "dist/index.html"
   },
   "icons": {
