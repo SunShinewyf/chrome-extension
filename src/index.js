@@ -1,1 +1,5 @@
-console.log('iiii');
+'use strict';
+
+require('./index.less');
+console.log('oooo')
+

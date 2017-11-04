@@ -1,0 +1,50 @@
+@charset "utf-8";
+html,
+body {
+  width: 800px;
+  height: 600px;
+  margin: 0;
+  padding: 0;
+  font-family: STHeiti, '\5FAE\8F6F\96C5\9ED1', Arial, sans-serif;
+  background: url(src/imgs/flower.jpg?820492b7) no-repeat center center;
+  background-size: cover;
+  border-radius: 5px;
+  z-index: 1;
+}
+html .mask,
+body .mask {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+html .wrap,
+body .wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: 15px;
+}
+html .wrap .content,
+body .wrap .content {
+  width: 100%;
+  height: 40px;
+}
+html .wrap .content .title,
+body .wrap .content .title {
+  font-size: 18px;
+  color: #fff;
+  line-height: 40px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYAgMAAACdGdVrAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAACmAAAApgHdff84AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAAlQTFRF////asFaasJZCcC5pgAAAAJ0Uk5TAICbK04YAAAAOklEQVQIW2NgIAAcINQECLUEQq1kYMhaBQQODFIgagIDG4hawsAIolbCKKggVAlUA1Q7kmETUCzCAQANVR7LToxg1QAAAABJRU5ErkJggg==) no-repeat left center;
+  background-size: 20px 20px;
+  padding-left: 30px;
+}
