@@ -12,7 +12,10 @@
   "icons": {
       "48": "icon.png"
    },
-  "permissions": [],
+  "permissions": [
+    "storage",
+    "bookmarks"
+  ],
   "content_scripts":[{
     "js": [ "helloworld.js" ],
     "matches": [ "<all_urls>" ]
