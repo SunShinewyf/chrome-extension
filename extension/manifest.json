@@ -14,7 +14,12 @@
    },
   "permissions": [
     "storage",
-    "bookmarks"
+    "bookmarks",
+    "http://*/",
+    "chrome://favicon/",
+    "chrome://favicon/*",
+    "tabs", 
+    "<all_urls>"
   ],
   "content_scripts":[{
     "js": [ "helloworld.js" ],

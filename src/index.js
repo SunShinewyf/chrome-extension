@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded',function(){
 function loadStorage(){
     chrome.bookmarks.getTree(function(data){
         const result = formatTree(data[0]);
-        console.log(result);
+        console.log(typeof(result),result,'ooooo');
         renderData(result);
     })
 
@@ -49,13 +49,18 @@ function formatTree(parent,parentTitle){
 
 //渲染书签数据
 function renderData(result){
-    const len = result.length;
-    for(let i=0; i<len; i++){
-        const html = '<div class="content" id="tags">'+
-                     '<div class="title">'+ result[i] + '</div>'+
-                     '</div>';
-                     console.log($('.wrap'));
-        $('.wrap').append(html);
+    for( let key in result){
+        if(result[key] && result[key].length){
+            let html = '<div class="content" id="tags">'+
+                     '<div class="title">'+ key + '</div>'+
+                     '<ul class="child-bookmark">';
+            result[key].forEach(function(item){
+                html += '<li><img class="icon" src="chrome://favicon/'+item.url+'"><a target="_blank" href="' + item.url + '">'+ item.title + '</a></li>';
+            })
+            html += '</ul></div>';
+            $('.wrap').append(html);
+        }
+        
     }
 }
 
