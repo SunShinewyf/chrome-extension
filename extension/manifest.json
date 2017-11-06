@@ -22,7 +22,6 @@
     "<all_urls>"
   ],
   "content_scripts":[{
-    "js": [ "helloworld.js" ],
     "matches": [ "<all_urls>" ]
   }]
 }
